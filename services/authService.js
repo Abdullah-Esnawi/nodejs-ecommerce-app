@@ -4,7 +4,7 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 
 const asyncHandler = require("express-async-handler");
-const ApiResponse = require("../utils/ApiResponse");
+const ApiResponse = require("../utils/apiResponse");
 const sendEmail = require("../utils/sendEmail");
 const createToken = require("../utils/createToken");
 

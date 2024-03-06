@@ -1,5 +1,5 @@
 const asyncHandler = require("express-async-handler");
-const ApiResponse = require("../utils/ApiResponse");
+const ApiResponse = require("../utils/apiResponse");
 
 const Product = require("../models/productModel");
 const Coupon = require("../models/couponModel");

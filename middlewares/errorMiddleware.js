@@ -1,4 +1,4 @@
-const ApiResponse = require("../utils/ApiResponse");
+const ApiResponse = require("../utils/apiResponse");
 
 const sendErrorForDev = (err, res) =>
   res.status(err.statusCode).json({

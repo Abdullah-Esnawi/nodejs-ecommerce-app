@@ -1,5 +1,5 @@
 const multer = require("multer");
-const ApiResponse = require("../utils/ApiResponse");
+const ApiResponse = require("../utils/apiResponse");
 
 const multerOptions = () => {
   const multerStorage = multer.memoryStorage();

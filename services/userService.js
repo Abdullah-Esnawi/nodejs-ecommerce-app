@@ -4,7 +4,7 @@ const sharp = require("sharp");
 const bcrypt = require("bcryptjs");
 
 const factory = require("./handlersFactory");
-const ApiResponse = require("../utils/ApiResponse");
+const ApiResponse = require("../utils/apiResponse");
 const { uploadSingleImage } = require("../middlewares/uploadImageMiddleware");
 const createToken = require("../utils/createToken");
 const User = require("../models/userModel");

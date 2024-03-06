@@ -10,7 +10,7 @@ const helmet = require("helmet");
 
 dotenv.config({ path: "config.env" });
 const fs = require("fs");
-const ApiResponse = require("./utils/ApiResponse");
+const ApiResponse = require("./utils/apiResponse");
 const globalError = require("./middlewares/errorMiddleware");
 const dbConnection = require("./config/database");
 // Routes
