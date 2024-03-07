@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+     .container {
+        
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        /* margin-top: 160px !important;  */
+        padding: 20px;
+        background-color: black;
+    }
+
+    .page-title {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 20px;
+    }
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: #f9b232;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    .product-image {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    .product-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .product-price {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .add-to-cart {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .add-to-cart:hover {
+        background-color: #555;
+    }
+</style>
+
+<body>
+    <header class="wow pulse">
+        <h2>Beech</h2>
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#Services">Services</a>
+            <a href="#Products">Products</a>
+            <a href="#About">About</a>
+            <a href="#Content us">Content us</a>
+            <a href="./login.html">Login</a>
+        </nav>
+        <!-- <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass" style="color: #FFD43B;"></i>
+        </div> -->
+        <div class="search-box">
+            <!-- <i class="fa-solid fa-magnifying-glass" style="color: #FFD43B;"></i> -->
+            <input type="text" id="search-input" placeholder="Search for furniture...">
+            <button style="background-color: #FFD43B;" id="search-button">Search</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1 class="page-title">Shop</h1>
+        <div class="products">
+            <div class="product">
+                <img class="product-image" src="photos/photo_15.jpg" alt="Product 1">
+                <h2 class="product-title">Product 1</h2>
+                <p class="product-price">$49.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="product-image" src="photos/photo_12.jpg" alt="Product 2">
+                <h2 class="product-title">Product 2</h2>
+                <p class="product-price">$99.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="product-image" src="photos/photo_4.jpg" alt="Product 3">
+                <h2 class="product-title">Product 3</h2>
+                <p class="product-price">$79.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="product-image" src="photos/photo_3.jpg" alt="Product 3">
+                <h2 class="product-title">Product 3</h2>
+                <p class="product-price">$79.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="product-image" src="photos/photo_2.jpg" alt="Product 3">
+                <h2 class="product-title">Product 3</h2>
+                <p class="product-price">$79.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="product-image" src="photos/photo_1.jpg" alt="Product 3">
+                <h2 class="product-title">Product 3</h2>
+                <p class="product-price">$79.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="product-image" src="photos/photo_12.jpg" alt="Product 2">
+                <h2 class="product-title">Product 2</h2>
+                <p class="product-price">$99.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="product-image" src="photos/photo_4.jpg" alt="Product 3">
+                <h2 class="product-title">Product 3</h2>
+                <p class="product-price">$79.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="product-image" src="photos/photo_3.jpg" alt="Product 3">
+                <h2 class="product-title">Product 3</h2>
+                <p class="product-price">$79.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="product-image" src="photos/photo_2.jpg" alt="Product 3">
+                <h2 class="product-title">Product 3</h2>
+                <p class="product-price">$79.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="product-image" src="photos/photo_1.jpg" alt="Product 3">
+                <h2 class="product-title">Product 3</h2>
+                <p class="product-price">$79.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="product-image" src="photos/photo_12.jpg" alt="Product 2">
+                <h2 class="product-title">Product 2</h2>
+                <p class="product-price">$99.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="product-image" src="photos/photo_4.jpg" alt="Product 3">
+                <h2 class="product-title">Product 3</h2>
+                <p class="product-price">$79.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="product-image" src="photos/photo_3.jpg" alt="Product 3">
+                <h2 class="product-title">Product 3</h2>
+                <p class="product-price">$79.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="product-image" src="photos/photo_2.jpg" alt="Product 3">
+                <h2 class="product-title">Product 3</h2>
+                <p class="product-price">$79.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="product-image" src="photos/photo_1.jpg" alt="Product 3">
+                <h2 class="product-title">Product 3</h2>
+                <p class="product-price">$79.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to handle adding a product to the cart
+        function handleAddToCart() {
+            // Add your logic to add the product to the cart here
+            console.log('Product added to cart!');
+        }
+
+        // Get all the "Add to Cart" buttons
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+        // Add event listeners to the "Add to Cart" buttons
+        addToCartButtons.forEach((button) => {
+            button.addEventListener('click', handleAddToCart);
+        });
+    </script>
+</body>
+
+</html>

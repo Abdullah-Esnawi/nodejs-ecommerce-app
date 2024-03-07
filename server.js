@@ -24,7 +24,7 @@ dbConnection();
 const app = express();
 
 
-app.set("views", "view");
+app.set("views", "views");
 
 // Enable other domains to access your application
 app.use(cors());
@@ -43,11 +43,6 @@ app.post(
 // Middlewares
 app.use(express.json({ limit: "20kb" }));
 app.use(express.static(path.join(__dirname, "uploads"), { flags: "a" }));
-
-app.get('/', (req, res) => {
-
-  res.render('view/index.html');
-});
 
 const accessLogStream = fs.createWriteStream(
   path.join(__dirname, "access.log")
@@ -73,6 +68,11 @@ app.use(helmet());
 
 // Mount Routes
 mountRoutes(app);
+
+app.get('/', (req, res) => {
+
+  res.render('views/index');
+});
 
 app.all("*", (req, res, next) => {
   next(new ApiResponse(`Can't find this route: ${req.originalUrl}`, 400));
