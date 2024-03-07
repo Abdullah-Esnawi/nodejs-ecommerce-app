@@ -23,7 +23,7 @@ dbConnection();
 // express app
 const app = express();
 
-
+app.set('template engine', 'ejs');
 app.set("views", "views");
 
 // Enable other domains to access your application
