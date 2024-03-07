@@ -24,6 +24,9 @@ const mountRoutes = (app) => {
   app.use('/api/v1/coupons', couponRoute);
   app.use('/api/v1/cart', cartRoute);
   app.use('/api/v1/orders', orderRoute);
+  app.use('/', (req, res, next) => {
+    res.render('')
+  });
 };
 
 module.exports = mountRoutes;

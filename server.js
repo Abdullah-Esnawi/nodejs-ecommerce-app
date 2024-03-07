@@ -23,6 +23,9 @@ dbConnection();
 // express app
 const app = express();
 
+
+app.set("views", "view");
+
 // Enable other domains to access your application
 app.use(cors());
 app.options("*", cors());
@@ -40,6 +43,11 @@ app.post(
 // Middlewares
 app.use(express.json({ limit: "20kb" }));
 app.use(express.static(path.join(__dirname, "uploads"), { flags: "a" }));
+
+app.get('/', (req, res) => {
+
+  res.render('view/index.html');
+});
 
 const accessLogStream = fs.createWriteStream(
   path.join(__dirname, "access.log")

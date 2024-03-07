@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <!--  Start:link library font font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  End:link library font font-awesome -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+
+    <!-- file library -->
+    <link rel="stylesheet" href="animate.css">
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- end library -->
+    <title>beech</title>
+</head>
+
+<body>
+    <!-- Start header -->
+    <header class="wow pulse">
+        <h2>Beech</h2>
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#Services">Services</a>
+            <a href="#Products">Products</a>
+            <a href="#About">About</a>
+            <a href="#Content us">Content us</a>
+            <a href="./login.html">Login</a>
+        </nav>
+        <!-- <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass" style="color: #FFD43B;"></i>
+        </div> -->
+        <div class="search-box">
+            <!-- <i class="fa-solid fa-magnifying-glass" style="color: #FFD43B;"></i> -->
+            <input type="text" id="search-input" placeholder="Search for furniture...">
+            <button style="background-color: #FFD43B;" id="search-button">Search</button>
+        </div>
+
+    </header>
+    <!-- End header -->
+    <!-- Start section Home -->
+    <section class="carsour" id="Home">
+        <div>
+            <p class="wow pulse">Beech</p>
+            <h2>Discover Our new collections</h2>
+            <a href="./products.html">Brows now</a>
+        </div>
+    </section>
+    <!--  Start Services -->
+    <section class="services" id="Services">
+        <h1 class="wow bounceInDown">Services</h1>
+        <div class="container">
+
+            <div class="card wow lightSpeedIn">
+                <h2>Product Catalog Management</h2>
+                <p>Provide a service that allows you to easily manage and update your furniture product catalog. This
+                    includes adding new products, updating product details, managing inventory, and categorizing
+                    products.</p>
+            </div>
+
+            <div class="card wow pulse">
+                <h2>Shopping Cart and Checkout</h2>
+                <p>Implement a robust shopping cart and checkout system that enables customers to add items to their
+                    cart, review their order, and securely complete the payment process.</p>
+            </div>
+
+            <div class="card wow lightSpeedIn">
+                <h2>Search and Filtering</h2>
+                <p>Offer a search functionality that allows customers to find furniture products based on various
+                    criteria such as category, price range, color, size, and material. Implement filtering options to
+                    refine search results and help customers find the furniture they desire.</p>
+            </div>
+
+            <div class="card wow lightSpeedIn">
+                <h2>User Authentication and Profiles</h2>
+                <p>Provide user authentication and registration services to allow customers to create accounts, save
+                    their preferences, track their orders, and manage their profiles. This enhances the personalized
+                    experience and encourages customer loyalty.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Start products -->
+    <h2 class="products-title">Products</h2>
+    <ul class="products wow pulse" id="product-list">
+
+    </ul>
+    <!-- Start About -->
+    <section class="about" id="About">
+        <div class="about-desc">
+            <h2>About Beech</h2>
+            <p class="about-desc">Welcome to Beech, your ultimate destination for exquisite furniture and home decor.<br />
+                At Beech, we believe that every space deserves to be adorned with beautiful and functional furniture
+                that reflects your unique style and enhances your living experience. Whether you're furnishing your
+                home, office, or any other space, we offer an extensive collection of carefully curated furniture pieces
+                that combine exceptional craftsmanship, timeless design, and superior quality.</p>
+        </div>
+        <div class="about-img">
+            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                type="module"></script>
+            <dotlottie-player src="https://lottie.host/6f54eb89-8621-481f-99c0-1d3ddb123a49/4PgxN26Kmb.json"
+                background="transparent" speed="0.5" style="width: 300px; height: 300px;" loop
+                autoplay></dotlottie-player>
+        </div>
+    </section>
+
+    <!-- End About Our Site -->
+
+    <a href="#">
+        <div class="up">
+            <i class="fa-solid fa-angle-up"></i>
+        </div>
+    </a>
+    <!-- Start Section Map -->
+    <section>
+        <div class="contact" id="Content us">
+            <h2>Contact</h2>
+            <div style="display: flex;">
+                <div class="input-form" style="margin-right:20px;">
+                    <input type="text" required>
+                    <label>Enter your Name</label>
+                </div>
+
+                <div class="input-form">
+                    <input type="text" required>
+                    <label>Enter your Email</label>
+                </div>
+            </div>
+
+            <div style="display: flex;">
+                <div class="input-form" style="margin-right:20px;">
+                    <input type="text" required>
+                    <label>Enter your phone</label>
+                </div>
+
+                <div class="input-form">
+                    <input type="text" required>
+                    <label>Enter your Address</label>
+                </div>
+            </div>
+
+
+            <div class="input-form">
+                <input type="text" required>
+                <label>Enter your Massage</label>
+            </div>
+            <input type="submit" class="send" value="Send">
+
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.268005603929!2d32.27140279999998!3d30.598202999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f8595c1f1a3c13%3A0x22065ae21a823b41!2z2YXYs9is2K8g2KfZhNiz2YTYp9mF2Iwg2YLYs9mFINir2KfZhiDYp9mE2KfYs9mF2KfYudmK2YTZitip2Iwg2YXYrdin2YHYuNipINin2YTYpdiz2YXYp9i52YrZhNmK2Kk!5e0!3m2!1sar!2seg!4v1707943379897!5m2!1sar!2seg"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+</body>
+
+</html>
